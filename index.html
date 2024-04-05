@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week1-RWD Website</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 選單 -->
+    
+    <nav>
+      <ul class="mainpage">
+        <li><a href="#">My Website</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li ><a href="#">Item 1</a></li>
+        <li ><a href="#">Item 2</a></li>
+        <li ><a href="#">Item 3</a></li>
+        <li ><a href="#">Item 4</a></li>
+      </ul>
+    </nav>
+    <!-- 歡迎主頁 -->
+    <div class="parentContainer">
+      <img src="./wallpaper.jpeg" alt="wallpaper" />
+      <div class="centered">Welcome to MyHome</div>
+    </div>
+    <!-- Small Boxes-->
+    
+    </div>
+    <div class="container">
+      <div class="small-box">
+        <img src="./flower.jpeg" alt="Image 1" />
+        <div class="text">Promotion 1</div>
+      </div>
+      <div class="small-box">
+        <img src="./flower.jpeg" alt="Image 2" />
+        <div class="text">Promotion 2</div>
+      </div>
+      <div class="small-box">
+        <img src="./flower.jpeg" alt="Image 3" />
+        <div class="text">Promotion 3</div>
+      </div>
+    </div>
+    <!-- Big Boxes -->
+
+    <div class="grid-container">
+      
+      <div class="box">
+        <div class="box-text">Title 1</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box">
+        <div class="box-text">Title 2</div>
+        <span class="star">&#9733;</span>
+      </div><div class="box">
+        <div class="box-text">Title 3</div>
+        <span class="star">&#9733;</span>
+      </div><div class="box">
+        <div class="box-text">Title 4</div>
+        <span class="star">&#9733;</span>
+      </div><div class="box">
+        <div class="box-text">Title 5</div>
+        <span class="star">&#9733;</span>
+      </div><div class="box">
+        <div class="box-text">Title 6</div>
+        <span class="star">&#9733;</span>
+      </div><div class="box">
+        <div class="box-text">Title 7</div>
+        <span class="star">&#9733;</span>
+      </div><div class="box">
+        <div class="box-text">Title 8</div>
+        <span class="star">&#9733;</span>
+      </div><div class="box">
+        <div class="box-text">Title 9</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box">
+        <div class="box-text">Title 10</div>
+        <span class="star">&#9733;</span>
+      </div>
+      
+    
+    
+
+    </div>
+    
+       
+
+    <script>
+      function showSidebar() {
+        // 檢查螢幕寬度是否小於或等於600px
+        if (window.innerWidth <= 600) {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'flex';
+        }
+      }
+      function hideSidebar() {
+        // 檢查螢幕寬度是否小於或等於600px
+        if (window.innerWidth <= 600) {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'none';
+        }
+      }
+    </script>
+    
+    
+
+  </body>
+</html>
